@@ -133,7 +133,7 @@ function Signup() {
     setMessage("");
 
     try {
-      const response = await axios.post("http://localhost:3002/signup", {
+      const response = await axios.post("https://zerodha-backend-api.onrender.com/signup", {
         username,
         email,
         password,
