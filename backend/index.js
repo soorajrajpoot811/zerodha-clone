@@ -253,7 +253,11 @@ const uri = process.env.MONGO_URL;
 
 const app = express();
 
-app.use(cors());
+// 🟢 CORS configuration me dono Vercel links (landing page aur dashboard) allowed hone chahiye:
+app.use(cors({
+  origin: ["https://zerodha-clone-6rgb.vercel.app", "https://zerodha-clone-tl12.vercel.app"],
+  credentials: true
+}));
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 // 🟢 Passport Configuration Setup
