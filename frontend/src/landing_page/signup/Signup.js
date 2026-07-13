@@ -142,7 +142,7 @@ function Signup() {
       if (response.data.success) {
         setMessage("Signup Successful! Redirecting...");
         setTimeout(() => {
-          window.location.href = "http://zerodha-clone-tl12.vercel.app";
+          window.location.href = "https://zerodha-clone-tl12.vercel.app";
         }, 1500);
       }
     } catch (error) {
